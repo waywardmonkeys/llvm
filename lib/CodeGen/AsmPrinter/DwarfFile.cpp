@@ -126,9 +126,9 @@ void DwarfFile::emitAbbrevs(const MCSection *Section) {
     // Start the debug abbrev section.
     Asm->OutStreamer.SwitchSection(Section);
 
-    // For each abbrevation.
+    // For each abbreviation.
     for (const DIEAbbrev *Abbrev : Abbreviations) {
-      // Emit the abbrevations code (base 1 index.)
+      // Emit the abbreviations code (base 1 index.)
       Asm->EmitULEB128(Abbrev->getNumber(), "Abbreviation Code");
 
       // Emit the abbreviations data.

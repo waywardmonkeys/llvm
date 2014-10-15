@@ -337,7 +337,7 @@ Block descriptors
   }
 
 This descriptor provides debug information about nested blocks within a
-subprogram.  The line number and column numbers are used to dinstinguish two
+subprogram.  The line number and column numbers are used to distinguish two
 lexical blocks at same depth.
 
 .. code-block:: llvm
@@ -524,7 +524,7 @@ of is a :ref:`global variable descriptor <format_global_variables>` then it
 represents a static member.  And, if the member is a :ref:`subprogram
 descriptor <format_subprograms>` then it represents a member function.  For
 static members and member functions, ``getName()`` returns the members link or
-the C++ mangled name.  ``getDisplayName()`` the simplied version of the name.
+the C++ mangled name.  ``getDisplayName()`` the simplified version of the name.
 
 The first member of subroutine (tag = ``DW_TAG_subroutine_type``) type elements
 is the return type for the subroutine.  The remaining elements are the formal
